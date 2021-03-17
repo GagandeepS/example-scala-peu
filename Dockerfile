@@ -1,4 +1,4 @@
-FROM openjdk:8 AS build
+FROM adoptopenjdk/maven-openjdk8 AS build
 RUN mkdir -p /workspace
 WORKDIR /workspace
 COPY pom.xml /workspace
